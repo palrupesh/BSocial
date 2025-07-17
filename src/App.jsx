@@ -10,7 +10,6 @@ import {
 
 function App() {
   return (
-    // <Home />
     <Router>
       <Routes>
         <Route path="/" exact element={<Home />} />

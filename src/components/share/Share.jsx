@@ -2,11 +2,13 @@ import "./share.css";
 import { PermMedia, Label, LocationOn, EmojiEmotions } from "@mui/icons-material";
 
 export default function Share() {
+    const PF = import.meta.env.VITE_PUBLIC_FOLDER;
+
     return (
         <div className="share">
             <div className="shareWrapper">
                 <div className="shareTop">
-                    <img className="shareProfileImg" src="assets/person/1.jpeg" alt="" />
+                    <img className="shareProfileImg" src={`${PF}person/1.jpeg`} alt="" />
                     <input type="text" placeholder="What's in your mind people"
                         className="shareInput"
                     />
